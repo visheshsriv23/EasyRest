@@ -1,0 +1,189 @@
+body{
+  display: flex;
+  flex-direction: column;
+  min-height: 100vh;
+  margin: 0;
+  font-family: "Plus Jakarta Sans", sans-serif !important;
+}
+.container{
+  flex: 1;
+}
+.navbar{
+  height: 5rem;
+  background-color: white;
+}
+.navbar:hover {
+  transform: scale(1.02);
+}
+.fa-compass{
+  color: #fe424d;
+  font-size: 2rem;
+}
+.nav-link{
+  color: #222222 !important;
+}
+
+/*Footer*/
+.f-info-links a{
+  text-decoration: none;
+  color: #222222;
+}
+.f-info-links a:hover {
+  text-decoration: underline;
+  color: red;
+}
+.f-info-links, .f-info-socials, .f-info-brand {
+  width: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.f-info-socials i{
+  margin-right: 1rem;
+  font-size: 1.3rem;
+}
+.f-info-socials i:hover {
+  transform: scale(1.5);
+}
+
+.f-info{
+  text-align: center;
+  height: 8rem;
+  background-color: #ebebeb;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  align-items: space-evenly;
+}
+
+/* Card */
+.listing-card{
+  border: none !important;
+  margin-bottom: 2rem;
+}
+.listing-card:hover {
+  transform: scale(1.07);
+}
+.card-img-top{
+  border-radius: 1rem !important;
+  width: 100% !important;
+  object-fit: cover !important;
+}
+.card-body{
+  padding: 0 !important;
+}
+.card-text p{
+  font-weight: 400;
+}
+.listing-link{
+  text-decoration: none;
+}
+
+/*Card Effect*/
+.card-img-overlay{
+  opacity: 0;
+}
+.card-img-overlay:hover {
+  opacity: 0.2;
+  background-color: whitesmoke;
+}
+
+/*New Page*/
+
+.add-btn{
+  background-color: #fe424d !important;
+  border: none !important;
+}
+
+/*Edit Page*/
+.edit-btn{
+  background-color: #fe424d !important;
+  border: none !important;
+}
+.edit-btn:hover {
+  transform: scale(1.2);
+}
+.del-btn:hover {
+  transform: scale(1.2);
+}
+
+/*Show Page*/
+.show-img{
+  height: 30vh;
+  width: ;
+}
+
+.btns{
+  display: flex;
+}
+
+.show-card{
+  padding-left: 0;
+  padding-right: 0;
+}
+.show-card:hover {
+  transform: scale(1.2);
+}
+
+/*Home page*/
+.anch{
+  text-decoration: none;
+  color: #222222;
+}
+.anch:hover {
+  text-decoration: underline;
+  color: red;
+}
+.list:hover {
+  transform: scale(1.05);
+}
+.star{
+  color: gold !important;
+}
+
+/*Map*/
+#map {
+  height: 400px;
+  width: 80vh;
+}
+.marker {
+    position: relative;
+    width: 40px;
+    height: 40px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    cursor: pointer;
+}
+
+/* Common style for both icons */
+.marker i {
+    position: absolute;
+    transition: all 0.4s cubic-bezier(0.175, 0.885, 0.32, 1.275); /* Smooth "pop" */
+    color: #fe424d;
+}
+
+/* Default state: Pin is visible, Compass is hidden and small */
+.pin {
+    font-size: 30px;
+    opacity: 1;
+    transform: scale(1);
+}
+
+.compass {
+    font-size: 10px;
+    opacity: 0;
+    transform: scale(0);
+}
+
+/* Hover state: Hide Pin, Show and Grow Compass */
+.marker:hover .pin {
+    opacity: 0;
+    transform: scale(0) rotate(20deg);
+}
+
+.marker:hover .compass {
+    opacity: 1;
+    font-size: 35px; /* The "Pop" size */
+    transform: scale(1.2);
+}
