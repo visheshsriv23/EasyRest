@@ -184,25 +184,3 @@ body{
     font-size: 35px; 
     transform: scale(1.2);
 }
-
-@media (max-width: 768px) {
-    .navbar-nav {
-        text-align: center;
-    }
-
-    #filters {
-        display: flex;
-        flex-wrap: nowrap;
-        overflow-x: auto; 
-        align-items: center;
-    }
-
-    .filter {
-        min-width: 6rem; 
-        margin-top: 1rem;
-    }
-    
-    .tax-toggle {
-        display: none; 
-    }
-}
