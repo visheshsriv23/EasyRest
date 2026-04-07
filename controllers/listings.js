@@ -10,7 +10,6 @@ module.exports.index = async (req, res) => {
     if (category) {
         allListings = await Listing.find({ category: category });
     } else if (search) {
-        // 2. Add this block to search by location or country
         allListings = await Listing.find({
             $or: [
                 { location: { $regex: search, $options: "i" } },
@@ -20,6 +19,7 @@ module.exports.index = async (req, res) => {
     } else {
         allListings = await Listing.find({});
     }
+
     if (allListings.length === 0) {
         req.flash("error", "No listings found for your search!");
         return res.redirect("/");
@@ -31,6 +31,7 @@ module.exports.index = async (req, res) => {
 module.exports.renderNewForm = (req, res) => {
 	res.render("listings/new.ejs");
 };
+
 module.exports.showListing = async (req, res) => {
 	let {id} = req.params;
 	const listing = await Listing.findById(id)

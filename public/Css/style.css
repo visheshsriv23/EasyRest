@@ -156,14 +156,12 @@ body{
     cursor: pointer;
 }
 
-/* Common style for both icons */
 .marker i {
     position: absolute;
-    transition: all 0.4s cubic-bezier(0.175, 0.885, 0.32, 1.275); /* Smooth "pop" */
+    transition: all 0.4s cubic-bezier(0.175, 0.885, 0.32, 1.275); 
     color: #fe424d;
 }
 
-/* Default state: Pin is visible, Compass is hidden and small */
 .pin {
     font-size: 30px;
     opacity: 1;
@@ -176,7 +174,6 @@ body{
     transform: scale(0);
 }
 
-/* Hover state: Hide Pin, Show and Grow Compass */
 .marker:hover .pin {
     opacity: 0;
     transform: scale(0) rotate(20deg);
@@ -184,6 +181,28 @@ body{
 
 .marker:hover .compass {
     opacity: 1;
-    font-size: 35px; /* The "Pop" size */
+    font-size: 35px; 
     transform: scale(1.2);
+}
+
+@media (max-width: 768px) {
+    .navbar-nav {
+        text-align: center;
+    }
+
+    #filters {
+        display: flex;
+        flex-wrap: nowrap;
+        overflow-x: auto; 
+        align-items: center;
+    }
+
+    .filter {
+        min-width: 6rem; 
+        margin-top: 1rem;
+    }
+    
+    .tax-toggle {
+        display: none; 
+    }
 }
