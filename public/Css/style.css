@@ -184,3 +184,26 @@ body{
     font-size: 35px; 
     transform: scale(1.2);
 }
+#filters {
+    display: flex;
+    flex-wrap: nowrap;
+    overflow-x: auto;  
+    align-items: center;
+    padding: 0.5rem 0;
+}
+
+#filters::-webkit-scrollbar {
+    display: none;
+}
+
+.filter {
+    text-align: center;
+    margin-right: 2rem;
+    opacity: 0.7;
+    flex-shrink: 0;
+}
+
+.filter:hover {
+    opacity: 1;
+    cursor: pointer;
+}
