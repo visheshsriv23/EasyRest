@@ -79,7 +79,7 @@ Follow these steps to get a local copy up and running:
 
   * The application will be accessible at http://localhost:8080.
 
-🤝 Contributing
+## 🤝 Contributing
 
 Contributions are what make the open-source community such an amazing place to learn, inspire, and create.
 
@@ -93,7 +93,7 @@ Contributions are what make the open-source community such an amazing place to l
 
     Open a Pull Request.
 
-📄 License
+## 📄 License
 
 This project is licensed under the MIT License. See the LICENSE file in the repository for more details.
 👨‍💻 Developed By
