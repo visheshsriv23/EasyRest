@@ -30,7 +30,6 @@
 ---
 
 ## 📁 Project Structure
-*Organized according to repository architecture as seen in c8ec6edb-3112-4093-a3a6-61924e37455c and 945d651c-aad3-427c-b289-12e9c9b6e809:*
 ```text
 EasyRest/
 ├── controllers/    # Business logic for routes
@@ -45,22 +44,24 @@ EasyRest/
 ├── middleware.js   # Custom authentication & validation logic
 └── schema.js       # Data validation schemas
 
-⚙️ Setup and Installation
+```
+
+## ⚙️ Setup and Installation
 
 Follow these steps to get a local copy up and running:
 
-    Clone the repository:
+* Clone the repository:
     Bash
 
-    git clone [https://github.com/visheshsriv23/EasyRest.git](https://github.com/visheshsriv23/EasyRest.git)
+ * git clone [https://github.com/visheshsriv23/EasyRest.git](https://github.com/visheshsriv23/EasyRest.git)
     cd EasyRest
 
-    Install dependencies:
+ *  Install dependencies:
     Bash
 
     npm install
 
-    Environment Variables:
+* Environment Variables:
     Create a .env file in the root directory and add your credentials:
     Code snippet
 
@@ -76,7 +77,7 @@ Follow these steps to get a local copy up and running:
 
     node app.js
 
-    The application will be accessible at http://localhost:8080.
+  * The application will be accessible at http://localhost:8080.
 
 🤝 Contributing
 
@@ -97,4 +98,4 @@ Contributions are what make the open-source community such an amazing place to l
 This project is licensed under the MIT License. See the LICENSE file in the repository for more details.
 👨‍💻 Developed By
 
-Vishesh Srivastava
+![Vishesh Srivastava](https://github.com/visheshsriv23)
