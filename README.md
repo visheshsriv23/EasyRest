@@ -1,5 +1,5 @@
 # 🏨 EasyRest
-**A seamless, full-stack lodging and hospitality management platform.**
+**A seamless, full-stack lodging and room booking platform.**
 
 [![License: MIT](https://img.shields.io/badge/License-MIT-yellow.svg)](https://opensource.org/licenses/MIT)
 ![NodeJS](https://img.shields.io/badge/node.js-6DA55F?style=for-the-badge&logo=node.js&logoColor=white)
@@ -38,9 +38,9 @@ EasyRest/
 ├── public/         # Static assets (CSS, JS, Images)
 ├── routes/         # Express route definitions
 ├── utils/          # Helper functions & utilities
-├── views/          # EJS templates
+├── views/          # EJS templates for pages
 ├── app.js          # Main entry point
-├── cloudConfig.js  # Cloud service configuration
+├── cloudConfig.js  # Cloud service configuration entry point
 ├── middleware.js   # Custom authentication & validation logic
 └── schema.js       # Data validation schemas
 
